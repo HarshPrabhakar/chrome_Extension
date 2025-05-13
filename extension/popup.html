@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Styler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Text Styler</h2>
+
+  <label for="fontSelect">Font:</label>
+  <select id="fontSelect">
+    <option value="Arial">Arial</option>
+    <option value="Courier New">Courier New</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Verdana">Verdana</option>
+  </select>
+
+  <label for="letterSpacingRange">Letter Spacing: <span id="letterVal">1</span>px</label>
+  <input type="range" id="letterSpacingRange" min="0" max="20" value="1" />
+
+  <label for="lineSpacingRange">Line Spacing: <span id="lineVal">1.5</span></label>
+  <input type="range" id="lineSpacingRange" min="1" max="3" step="0.1" value="1.5" />
+
+  <button id="resetBtn">Reset</button>
+  <button id="speakBtn">Speak Selected Text</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

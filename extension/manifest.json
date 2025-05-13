@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Text Styler & TTS",
+  "version": "1.0",
+  "description": "Change font styles, spacing, and read selected text aloud",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
