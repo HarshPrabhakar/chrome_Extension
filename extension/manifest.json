@@ -1,15 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Text Styler & TTS",
-  "version": "1.0",
-  "description": "Change font styles, spacing, and read selected text aloud",
-  "permissions": [
-    "activeTab",
-    "scripting"
-  ],
+  "name": "Text Styler + Translator",
+  "version": "1.1",
+  "description": "Customize font styles and translate selected text in real-time.",
   "action": {
     "default_popup": "popup.html"
   },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://libretranslate.de/*"
+  ],
   "background": {
     "service_worker": "background.js"
   }
